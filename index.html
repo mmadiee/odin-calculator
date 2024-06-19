@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="odin-calculator.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>JavaScript Calculator</h1>
-        <div class="calculator">
-            <div id="display" class="display"></div>
-            <div class="buttons">
-                <button onclick="allClear('AC')" class="gray">AC</button>
-                <button onclick="toggleSign('-')" class="gray">±</button>
-                <button onclick="deleteEntry('delete')" class="gray">⌫</button>
-                <button onclick="display('/')" class="orange">/</button>
-                <button onclick="display('7')">7</button>
-                <button onclick="display('8')">8</button>
-                <button onclick="display('9')">9</button>
-                <button onclick="display('*')" class="orange">*</button>
-                <button onclick="display('4')">4</button>
-                <button onclick="display('5')">5</button>
-                <button onclick="display('6')">6</button>
-                <button onclick="display('-')" class="orange">-</button>
-                <button onclick="display('1')">1</button>
-                <button onclick="display('2')">2</button>
-                <button onclick="display('3')">3</button>
-                <button onclick="display('+')" class="orange">+</button>
-                <button onclick="display('0')" class="zero">0</button>
-                <button onclick="display('.')">.</button>
-                <button onclick="calculate('=')" class="orange">=</button>
-            </div>
+      <h1>JavaScript Calculator</h1>
+      <div class="calculator">
+        <div id="display" class="display">0</div>
+        <div class="buttons">
+          <button onclick="allClear()" class="gray">AC</button>
+          <button onclick="toggleSign()" class="gray">±</button>
+          <button onclick="deleteEntry()" class="gray">⌫</button>
+          <button onclick="setOperator('/')" class="orange">/</button>
+          <button onclick="appendNumber('7')">7</button>
+          <button onclick="appendNumber('8')">8</button>
+          <button onclick="appendNumber('9')">9</button>
+          <button onclick="setOperator('*')" class="orange">*</button>
+          <button onclick="appendNumber('4')">4</button>
+          <button onclick="appendNumber('5')">5</button>
+          <button onclick="appendNumber('6')">6</button>
+          <button onclick="setOperator('-')" class="orange">-</button>
+          <button onclick="appendNumber('1')">1</button>
+          <button onclick="appendNumber('2')">2</button>
+          <button onclick="appendNumber('3')">3</button>
+          <button onclick="setOperator('+')" class="orange">+</button>
+          <button onclick="appendNumber('0')" class="zero">0</button>
+          <button onclick="appendNumber('.')" id="decimal" class="decimal">.</button>
+          <button onclick="calculate()" class="orange">=</button>
         </div>
+      </div>
     </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
