@@ -6,6 +6,8 @@ body {
   justify-content: space-around;
   align-items: center;
   padding-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .container {
@@ -44,15 +46,42 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: hsl(0, 0%, 56%);
+  transition: 0.20s;
+}
+
+button:active{
+  background-color: hsl(0, 0%, 76%);
+}
+
 .gray{
-    background-color: #a5a5a5;
+    background-color: hsl(0, 0%, 65%);
     color: #080808;
 
 }
 
+.gray:hover {
+  background-color: hsl(0, 0%, 45%);
+  transition: 0.20s;
+}
+
+.gray:active{
+  background-color: hsl(0, 0%, 85%);
+}
+
 .orange{
-    background-color: #ff9f0a;
+    background-color: hsl(36, 100%, 52%);
     font-size: larger;
+}
+
+.orange:hover {
+  background-color: hsl(36, 100%, 42%);
+  transition: 0.20s;
+}
+
+.orange:active{
+  background-color: hsl(36, 100%, 62%);
 }
 
 .zero {
@@ -62,7 +91,3 @@ button {
     padding-left: 20px;
 }
 
-button:hover {
-  background-color: gainsboro;
-  transition: 0.5s;
-}
